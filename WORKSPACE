@@ -11,6 +11,12 @@ workspace(name = "tfx")
 
 load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
 
+# HACK(micahjsmith) local dev of protobuf
+local_repository(
+    name = "com_google_protobuf",
+    path = "/Users/micahsmith/workspace/protobuf"
+)
+
 # TF 1.15
 # LINT.IfChange(tf_commit)
 _TENSORFLOW_GIT_COMMIT = "590d6eef7e91a6a7392c8ffffb7b58f2e0c8bc6b"

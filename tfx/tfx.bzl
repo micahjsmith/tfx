@@ -28,4 +28,5 @@ def tfx_py_proto_library(name, srcs = [], deps = [], visibility = None, testonly
         visibility = visibility,
         testonly = testonly,
         use_grpc_plugin = use_grpc_plugin,
+        gen_pyi = True,
     )
